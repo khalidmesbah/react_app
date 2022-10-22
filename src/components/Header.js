@@ -5,9 +5,9 @@ function Header() {
     <header>
       <nav className="navbar navbar-expand-lg navbar-light bg-light">
         <div className="container-fluid">
-          <a className="navbar-brand" href="/#">
-            Navbar
-          </a>
+          <Link className="navbar-brand" to="/">
+            Header
+          </Link>
           <button
             className="navbar-toggler"
             type="button"

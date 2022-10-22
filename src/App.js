@@ -1,10 +1,11 @@
-// import logo from './logo.svg';
 import "./App.css";
-import Header from "./components/Header";
-import Slider from "./components/Slider";
-import ProductsList from "./components/ProductsList";
-import ProductDetails from "./components/ProductDetails";
-import About from "./components/About";
+import {
+  Header,
+  Slider,
+  ProductsList,
+  ProductDetails,
+  About,
+} from "./components/index";
 import { Route, Routes } from "react-router-dom";
 function App() {
   return (
@@ -22,7 +23,8 @@ function App() {
             }
           />
           <Route path="about" element={<About />} />
-          <Route path="product/:productId" element={<ProductDetails  />} />
+          <Route path="products" element={<ProductsList />} />
+          <Route path="product/:productId" element={<ProductDetails />} />
         </Routes>
       </div>
     </div>
